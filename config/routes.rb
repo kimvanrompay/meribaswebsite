@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get 'nl/rechten'
   get 'nl/privacy'
   get 'nl/algemenevoorwaarden'
+  get 'nl/overzicht'
+  get 'nl/overons'
+  get 'nl/sourcing'
+  get 'nl/comingsoon'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

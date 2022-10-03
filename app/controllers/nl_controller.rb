@@ -25,4 +25,17 @@ class NlController < ApplicationController
 
   def algemenevoorwaarden
   end
+  
+  def overzicht
+  end
+  
+  def overons
+  end
+  
+  def sourcing
+  end
+  
+  def comingsoon
+  end
+  
 end
