@@ -38,4 +38,7 @@ class NlController < ApplicationController
   def comingsoon
   end
   
+  def gebruik
+  end
+  
 end

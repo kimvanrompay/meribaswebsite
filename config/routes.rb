@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get 'nl/sourcing'
   get 'nl/comingsoon'
   get 'media/partners'
+  get 'nl/gebruik'
+  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
