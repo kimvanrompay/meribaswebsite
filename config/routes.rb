@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   get 'media/partners'
   get 'nl/gebruik'
   get 'nl/werkwijze'
+  get 'nl/startups'
+  get 'nl/kmo'
+  get 'nl/groteonderneming'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

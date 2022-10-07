@@ -44,4 +44,13 @@ class NlController < ApplicationController
   def werkwijze
   end
   
+  def startups
+  end
+  
+  def kmo
+  end
+  
+  def groteonderneming
+  end
+  
 end
