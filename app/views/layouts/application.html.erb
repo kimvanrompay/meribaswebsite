@@ -16,7 +16,9 @@
   </head>
 
   <body class="bg-amber-50">
-    <%= render "partials/nav"%>   
+    <% if !current_page?(controller:"media", action:"partners") %>
+    <%= render "partials/nav"%> 
+    <%end%>
     <main>
       <%= yield %>
     </main>
