@@ -41,4 +41,7 @@ class NlController < ApplicationController
   def gebruik
   end
   
+  def werkwijze
+  end
+  
 end
