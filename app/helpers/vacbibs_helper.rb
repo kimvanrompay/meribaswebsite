@@ -1,0 +1,2 @@
+module VacbibsHelper
+end

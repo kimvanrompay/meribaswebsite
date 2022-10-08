@@ -1,0 +1,2 @@
+class Vacbib < ApplicationRecord
+end

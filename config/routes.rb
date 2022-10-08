@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :vacbibs
   root 'nl#meribas'
   get 'nl/hoe'
   get 'nl/result'
