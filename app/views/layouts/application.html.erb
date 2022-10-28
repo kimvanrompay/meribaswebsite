@@ -23,11 +23,21 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
+      
   <body class="bg-amber-50">
-    <% if !current_page?(controller:"media", action:"partners") %>
+                  <% if notice %>
+                  <div class="bg-gray-900 text-yellow-400 text-center p-5">
+                    <p class="alert alert-success"><%= notice %></p>
+                  </div> 
+                  <% end %>
+                  <% if alert %>
+                  <div class="bg-gray-900 text-yellow-400 text-center p-5">
+                    <p class="alert alert-danger"><%= alert %></p>
+                  </div>
+                  <% end %>
+                  </div>
     <%= render "partials/nav"%> 
-    <%end%>
+
     <main>
       <%= yield %>
     </main>

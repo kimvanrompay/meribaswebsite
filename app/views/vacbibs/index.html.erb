@@ -4,14 +4,24 @@
   <% end %>
       <main class="mx-auto max-w-7xl px-4">
       <div class="text-center">
-        <h1 class="font-bold text-5xl">Gebruik deze vacatureteksten als basis.</h1>
+        <h1 class="font-bold text-5xl">Gebruik deze <%= @vacbibs.count %> vacatureteksten als basis.</h1>
         <p class="mx-auto mt-3 max-w-md text-base text-gray-900 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
         Kies gratis vacatureteksten die verantwoordelijkheden, taken en vereisten voor meer dan 2.00 jobs dekken.
+        
         </p>
-        <%= link_to 'New vacbib', new_vacbib_path, class: " max-w-sm rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
+        
+        <% if user_signed_in? %>
+            Logged in as <strong><%= current_user.id %></strong>.
+            <%= link_to 'Nieuwe vacature toevoegen', "/vacbibs/new", class: " max-w-sm rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
+          <% else %>
+        <% end %>
       </div>
       </main>
-  <div id="vacbibs" class="min-w-full pt-20">
+  <div id="vacbibs" class="min-w-full p-10 text-start grid border m-10">
+    <% if @vacbibs.count == 0 %>
+    <%= Coming soon %>
+    <% else %>
     <%= render @vacbibs %>
+    <% end %>
   </div>
 </div>

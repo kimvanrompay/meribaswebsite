@@ -1,4 +1,6 @@
 class VacbibsController < ApplicationController
+  require './app/controllers/users/sessions_controller.rb'
+  before_action :authenticate_user!, only: %i[ edit update destroy new create]
   before_action :set_vacbib, only: %i[ show edit update destroy ]
 
   # GET /vacbibs or /vacbibs.json
@@ -17,6 +19,7 @@ class VacbibsController < ApplicationController
 
   # GET /vacbibs/1/edit
   def edit
+    
   end
 
   # POST /vacbibs or /vacbibs.json
